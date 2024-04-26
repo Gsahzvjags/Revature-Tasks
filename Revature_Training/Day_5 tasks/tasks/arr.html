@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="div"></div>
+    <button id="btn">Names</button>
+
+    <script>
+        let btnEle=document.getElementById('btn');
+        let divEle=document.getElementById('div');
+        let arr=[{name:"naveen",age:14,city:'hyd'},
+        {name:'ravi',age:28,city:'nlg'}];
+        btnEle.addEventListener('click',function(){
+            arr.map((value)=>{
+                let h1=document.createElement('h1');
+                h1.innerHTML=value.name;
+                div.appendChild(h1)
+            });
+        });
+    </script>
+</body>
+</html>
